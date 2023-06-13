@@ -4,6 +4,7 @@
 
 """
 
+
 class Square:
     """ Creating a empty class called Square
 
