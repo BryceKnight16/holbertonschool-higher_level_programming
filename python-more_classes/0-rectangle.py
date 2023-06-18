@@ -5,9 +5,7 @@
 
 
 class Rectangle:
-'''
-Example of an empty class with a pass in it
-'''
-
-
+    '''
+    Example of an empty class with a pass in it
+    '''
     pass
