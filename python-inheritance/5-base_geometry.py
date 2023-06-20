@@ -4,7 +4,7 @@ Creating module for an empty class called BaseGeometry
 '''
 
 
-class BaseGeomtry:
+class BaseGeometry:
     '''
     Creating empty class called BaseGeometry
     '''
