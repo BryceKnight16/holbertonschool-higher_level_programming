@@ -10,7 +10,7 @@ First import ``MyList`` from the ``1-my_list`` module:
     Now use it:
 
     is MyList and list?
-    >>> issubclass(Mylist, list)
+    >>> issubclass(MyList, list)
     True
 
     sort basic numbers:
