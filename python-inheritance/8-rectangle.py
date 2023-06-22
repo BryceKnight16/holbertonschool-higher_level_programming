@@ -35,6 +35,11 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    '''
+    Creating class called Rectangle that inherits BaseGeometry
+    '''
+
+
     def __init__(self, width, height):
         '''
         Initializes a Rectangle object with the specified width and height.
