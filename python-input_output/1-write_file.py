@@ -3,4 +3,4 @@
 def write_file(filename="", text=""):
     with open(filename, 'r+', encoding="utf-8") as f:
         written_file= f.write(text)
-        print(written_file, end="")
+        return written_file
