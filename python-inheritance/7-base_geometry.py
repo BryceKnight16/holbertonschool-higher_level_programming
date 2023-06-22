@@ -3,6 +3,7 @@
 Creating module for the class called BaseGeometry
 '''
 
+
 class BaseGeometry:
     '''
     Creating class called BaseGeometry
