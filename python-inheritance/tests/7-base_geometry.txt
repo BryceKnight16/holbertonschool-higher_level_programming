@@ -1,0 +1,139 @@
+# Import the BaseGeometry class
+from base_geometry import BaseGeometry
+import traceback
+
+Bring in "BaseGeometry":
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+
+# Test Cases for BaseGeometry Class
+
+## Test Case 1: Testing integer_validator() method with integer value
+
+### Expected Output:
+# No exceptions raised
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", 5)
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 2: Testing integer_validator() method with string value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", "abc")
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 3: Testing integer_validator() method with float value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", 3.14)
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 4: Testing integer_validator() method with boolean value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", True)
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 5: Testing integer_validator() method with negative integer value
+
+### Expected Output:
+# Exception raised: width must be greater than 0
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", -5)
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 6: Testing integer_validator() method with zero value
+
+### Expected Output:
+# Exception raised: width must be greater than 0
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", 0)
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 7: Testing integer_validator() method with list value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", [1, 2, 3])
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 8: Testing integer_validator() method with tuple value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", (1, 2, 3))
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 9: Testing integer_validator() method with set value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", {1, 2, 3})
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
+
+
+## Test Case 10: Testing integer_validator() method with dictionary value
+
+### Expected Output:
+# Exception raised: width must be an integer
+
+try:
+    geometry = BaseGeometry()
+    geometry.integer_validator("width", {"a": 1, "b": 2})
+except Exception as e:
+    print("Exception raised:", str(e))
+    traceback.print_exc()
