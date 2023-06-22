@@ -3,17 +3,15 @@
 Creating module for the class called BaseGeometry
 '''
 
-
 class BaseGeometry:
     '''
     Creating class called BaseGeometry
     '''
     def area(self):
         '''
-        Creating a function to raise a expection message
+        Creating a function to raise an exception message
         '''
         raise Exception("area() is not implemented")
-
 
     def integer_validator(self, name, value):
         '''
@@ -32,21 +30,17 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
 
-
-
 class Rectangle(BaseGeometry):
     '''
     Creating class called Rectangle that inherits BaseGeometry
     '''
-
-
     def __init__(self, width, height):
         '''
         Initializes a Rectangle object with the specified width and height.
 
         Args:
-        width: The width of the rectangle.
-        height: The height of the rectangle.
+            width: The width of the rectangle.
+            height: The height of the rectangle.
         '''
         self.__width = width
         self.__height = height
