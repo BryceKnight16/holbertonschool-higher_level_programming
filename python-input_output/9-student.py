@@ -23,4 +23,4 @@ class Student:
 
 
     def to_json(self, attrs=None):
-            return vars(obj)
+            return vars(self)
