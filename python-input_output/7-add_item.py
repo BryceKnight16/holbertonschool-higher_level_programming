@@ -10,13 +10,18 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 
-args = sys.argv
+
 try:
-    arg_list = load_from_json_file("add_item.json")
-except:
-    arg_list = []
+    load_from_json_file('add_item.json')
+    file_exists = True
+except FileNotFoundError:
+    file_exists = False
 
-for arg in args[1:]:
-    arg_list.append(arg)
+if file_exists:
+    data = load_from_json_file('add_item.json')
+else:
+    data = []
 
-save_to_json_file(arg_list, "add_item.json")
+data.extend(sys.argv[1:])
+
+save_to_json_file(data, 'add_item.json')
