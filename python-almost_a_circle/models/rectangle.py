@@ -169,10 +169,10 @@ class Rectangle(Base):
         Assign the arguments to each attribute in the specified order.
 
         Args:
-            *args: The arguments to be assigned to the attributes.
+        *args: The arguments to be assigned to the attributes.
 
         Raises:
-            ValueError: If the number of arguments is less than 1 or more than 5
+        ValueError: If the number of arguments is less than 1 or more than 5
         '''
         if len(args) < 1 or len(args) > 5:
             raise ValueError("Invalid number of arguments")
