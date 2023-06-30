@@ -163,7 +163,7 @@ class Rectangle(Base):
     def __str__(self):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - " \
                f"{self.width}/{self.height}"
-    
+
     def update(self, *args):
         '''
         Assign the arguments to each attribute in the specified order.
@@ -172,7 +172,7 @@ class Rectangle(Base):
             *args: The arguments to be assigned to the attributes.
 
         Raises:
-            ValueError: If the number of arguments is less than 1 or more than 5.
+            ValueError: If the number of arguments is less than 1 or more than 5
         '''
         if len(args) < 1 or len(args) > 5:
             raise ValueError("Invalid number of arguments")
