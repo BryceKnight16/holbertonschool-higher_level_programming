@@ -43,7 +43,7 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def set_width(self, width):
+    def width(self, width):
         '''
         Set the width of the rectangle.
 
@@ -103,7 +103,7 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def set_y(self, y):
+    def y(self, y):
         '''
         Set the y-coordinate of the rectangle's position.
 
