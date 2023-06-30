@@ -3,6 +3,7 @@
 A module that creates a class called Base.
 '''
 
+
 class Base:
     '''
     class that is the base start for other classes
