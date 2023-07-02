@@ -4,6 +4,9 @@ A module that creates a class called Base.
 '''
 
 
+import json
+
+
 class Base:
     '''
     class that is the base start for other classes
@@ -24,11 +27,10 @@ class Base:
             self.id = self.__nb_objects
 
     @staticmethod
-
     def to_json_string(list_dictionaries):
-    '''
-    static method that returns a json string rep of list_dictionaries
-    '''
+        '''
+        static method that returns a json string rep of list_dictionaries
+        '''
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         else:
