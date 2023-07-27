@@ -1,4 +1,4 @@
---a script that creates a table second_table
+-- a script that creates a table second_table
 
 CREATE TABLE IF NOT EXISTS second_table (
        id INT,
