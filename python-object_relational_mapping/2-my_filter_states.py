@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     searched_name = sys.argv[4]
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM states WHERE BINARY name LIKE '{searched_name}';")
+    cur.execute("SELECT * FROM states WHERE BINARY name LIKE '{}';".format(searched_name))
     rows = cur.fetchall()
     for row in rows:
         print(row)
